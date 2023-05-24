@@ -1,0 +1,97 @@
+.sectionBG {
+  background: linear-gradient(62.5deg, #fff 0 50%, #d9d9d9 50% 100%);
+  height: 100%;
+  padding: 60px 0px;
+}
+.contSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.description h2 {
+  font-size: 5rem;
+}
+.description p {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02rem;
+  color: #5a5959;
+}
+
+@media (max-width: 1024px) {
+  .sectionBG {
+    height: 100%;
+  }
+  .description h2 {
+    font-size: 4rem;
+  }
+  .description p {
+    font-size: 1rem;
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionBG {
+    padding: 10px 0px;
+  }
+  .description h2 {
+    font-size: 2.75rem;
+  }
+  .description p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media (max-width: 600px) {
+  .contSection {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+  }
+  .soil {
+    grid-row: 3;
+  }
+  .description {
+    gap: 10px;
+  }
+  .description h2 {
+    align-self: center;
+    padding: 10px;
+    text-align: center;
+  }
+  .description p {
+    align-self: center;
+    font-size: 1rem;
+    line-height: 1.2;
+    padding: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .description h2 {
+    font-size: 2.35rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .description h2 {
+    font-size: 2rem;
+  }
+  .description p {
+    align-self: center;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,24 @@
+.sectionBG {
+  background: #000;
+}
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contText {
+  padding: 60px;
+  display: flex;
+  align-items: center;
+}
+.contText p {
+  font-size: 2.5rem;
+  color: #9a9999;
+  font-family: "Poppins",monospace;
+letter-spacing: 0.03rem;
+line-height: 1.1;
+  text-align: center;
+
+}
+.contText span{
+  color: white;
+}

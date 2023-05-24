@@ -1,0 +1,133 @@
+.sectionBG {
+  background: linear-gradient(-60deg, #9a684b 0 50%, #fff 50% 100%);
+  height: 100%;
+  padding: 60px 0px;
+}
+.contSect {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 20px;
+}
+.contDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.title,
+.span {
+  align-items: center;
+  font-size: 5rem;
+  font-family: 'Poppins', monospace;
+  font-weight: 600;
+  line-height: 0.9;
+}
+.span {
+  color: red;
+}
+.casual {
+  font-size: 5rem;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #7b7b7b;
+}
+.text {
+  font-size: 1.5rem;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.05rem;
+  color: #5a5959;
+}
+.aboutMore {
+  font-family: 'Poppins', monospace;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  background-color: #c2bcbc;
+  align-self: flex-start;
+  border-radius: 5px;
+  letter-spacing: 0.1rem;
+}
+.aboutMore:hover {
+  background-color: black;
+  color: #fff;
+  transition: 0.2s;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    display: flex;
+  }
+  .contSect {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .title {
+    font-size: 4rem;
+    align-self: center;
+  }
+  .casual {
+    font-size: 4rem;
+    text-align: center;
+  }
+  .text {
+    font-size: 1.25rem;
+    max-width: 50ch;
+    align-self: center;
+    text-align: center;
+  }
+  .aboutMore {
+    font-size: 1.25rem;
+    align-self: center;
+  }
+  .contTenis {
+    grid-row: 1;
+    max-width: 500px;
+  }
+  .contDescription {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .span {
+    font-size: 4rem;
+  }
+  .casual {
+    font-size: 3rem;
+  }
+  .text {
+    font-size: 1.15rem;
+    max-width: 50ch;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+  .span {
+    font-size: 3rem;
+  }
+  .casual {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 1.75rem;
+  }
+  .casual {
+    font-size: 1.75rem;
+  }
+  .text {
+    font-size: 1rem;
+  }
+}
