@@ -1,0 +1,48 @@
+.contBtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.btn {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.btn1 {
+  background-color: #810909;
+}
+.btn2 {
+  background-color: #1f58ea;
+}
+.btn3 {
+  background-color: #9f6b1b;
+}
+.btn4 {
+  background-color: #9f1b82;
+}
+
+@media (max-width: 1400px){
+  .btn {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 1024px){
+  .btn {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 768px){
+  .btn {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 425px){
+  .btn {
+    width: 60px;
+    height: 60px;
+  }
+}

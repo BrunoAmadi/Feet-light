@@ -1,0 +1,74 @@
+.sectionBG {
+  background: linear-gradient(62.5deg, #fff 0 50%, #d9d9d9 50% 100%);
+  height: 100%;
+}
+.section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+.section img {
+  animation: showColorShoe 0.7s ease-in-out;
+}
+.description h2 {
+  align-items: center;
+  font-size: 5rem;
+  font-family: 'Poppins', monospace;
+  font-weight: 600;
+  line-height: 0.9;
+  max-width: 10ch;
+}
+.description p {
+  font-size: 1.5rem;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  max-width: 40ch;
+  color: #5a5959;
+}
+@keyframes showColorShoe {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .description h2 {
+    order: 1;
+    font-size: 4rem;
+  }
+  .description p {
+    order: 2;
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .description p {
+    font-size: 1.15rem;
+  }
+}
+@media (max-width: 500px) {
+  .description h2 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 325px) {
+  .description h2 {
+    font-size: 2.5rem;
+  }
+  .description p {
+    font-size: 1rem;
+  }
+}
