@@ -1,22 +1,25 @@
 import React from 'react';
-import Header from './components/Header/Header';
 import './app.css';
-import { Main } from './components/Main/Main';
-import CasualSection from './components/CasualSection/CasualSection';
-import SectionDetails from './components/SectionDetails/SectionDetails';
-import SportiveSection from './components/SportiveSection/SportiveSection';
-import DetailsCasual from './components/DetailsCasual/DetailsCasual';
 import { GlobalStorage } from './GlobalContext';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+
 
 function App() {
   return (
     <GlobalStorage>
-      <Header />
-      <Main />
-      <SectionDetails />
-      <SportiveSection />
-      <CasualSection />
-      <DetailsCasual />
+      <BrowserRouter>
+        <Header />
+        <Routes >
+          <Route path='/' element={<Home />} />
+          {/* <Route path='product/sportshoes' element={< />} /> */}
+          <Route path='/loginUser' element={<Login />} />
+
+
+        </Routes>
+      </BrowserRouter>
     </GlobalStorage>
   );
 }

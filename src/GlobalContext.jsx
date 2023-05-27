@@ -9,6 +9,10 @@ export const GlobalStorage = ({ children }) => {
   const [colorBrown, setColorBrown] = React.useState();
   const [colorPink, setColorPink] = React.useState();
 
+  // STATE RESPONSAVEL POR ABRIR MENU DE PRODUTOS NA HOMEPAGE
+  const [showproduct, setshowproducts] = React.useState(false);
+
+
   return (
     <GlobalContext.Provider
       value={{
@@ -21,6 +25,10 @@ export const GlobalStorage = ({ children }) => {
         setColorBrown,
         colorPink,
         setColorPink,
+
+        // STATE EXPORTADO PARA CONTROLAR O MENU DE PRODUTOS NA HOMEPAGE
+        showproduct,
+        setshowproducts,
       }}
     >
       {children}

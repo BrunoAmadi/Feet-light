@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './sectiondetails.module.css';
-import tenisperfil from '../../img/tenisperfil.webp';
-import tenissoil from '../../img/tenissoil.webp';
+import tenisperfil from '../../../img/tenisperfil.webp';
+import tenissoil from '../../../img/tenissoil.webp';
 
 
 const SectionDetails = () => {

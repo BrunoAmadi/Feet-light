@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './sportive.module.css';
-import persontraining from '../../img/persontraining.webp';
+import persontraining from '../../../img/persontraining.webp';
 
 const SportiveSection = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './main.module.css';
-import tenisMain from '../../img/tenisinit.webp';
-import tenisTop from '../../img/tenistopvision.webp';
-import tenisperfil from '../../img/tenisperfil.webp';
-import tenissoil from '../../img/tenissoil.webp';
+import tenisMain from '../../../img/tenisinit.webp';
+import tenisTop from '../../../img/tenistopvision.webp';
+import tenisperfil from '../../../img/tenisperfil.webp';
+import tenissoil from '../../../img/tenissoil.webp';
 
 export const Main = () => {
   return (

@@ -1,0 +1,56 @@
+.wrapperLogin {
+  display: grid;
+  align-items: center;
+  height: 100vh;
+}
+.contLogin {
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 50px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form label {
+  font-size: 1.5rem;
+}
+.form input {
+  font-size: 1.25rem;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 7px 5px 5px gray;
+}
+.form input:focus {
+  outline: 3px solid #F3953E;
+  border: none;
+}
+.form button {
+  align-self: center;
+  font-size: 1.4rem;
+  margin-top: 50px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.1s;
+}
+
+.form label,
+input,
+button {
+  display: block;
+}
+.contImg img {
+  width: 800px;
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './choosecolor.module.css';
-import { GlobalContext } from '../../GlobalContext';
+import { GlobalContext } from '../../../GlobalContext';
 
 export const ChooseColor = () => {
   const { setColorRed, setColorBlue, setColorBrown, setColorPink } =

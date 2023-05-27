@@ -1,11 +1,11 @@
 import React from 'react';
-import shoescasual from '../../img/shoecasualred.webp';
-import shoescasualblue from '../../img/shoecasualblue.webp';
-import shoescasualbrown from '../../img/shoecasualbrown.webp';
-import shoescasualpink from '../../img/shoecasualpink.webp';
+import shoescasual from '../../../img/shoecasualred.webp';
+import shoescasualblue from '../../../img/shoecasualblue.webp';
+import shoescasualbrown from '../../../img/shoecasualbrown.webp';
+import shoescasualpink from '../../../img/shoecasualpink.webp';
 import styles from './detailscasual.module.css';
 import { ChooseColor } from './ChooseColor';
-import { GlobalContext } from '../../GlobalContext';
+import { GlobalContext } from '../../../GlobalContext';
 
 const DetailsCasual = () => {
   const { colorRed, colorBlue, colorBrown, colorPink } =

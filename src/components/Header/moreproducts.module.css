@@ -1,0 +1,32 @@
+.wrappermenuBG {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  bottom: -50px;
+
+}
+.menuBG {
+  background-color: white;
+  height: 50vh;
+  animation: animamenu .3s forwards;
+}
+.contProducts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+  justify-content: center;
+}
+@keyframes animamenu {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -25px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './casualsection.module.css';
-import topsidetenis from '../../img/topsideteniss.webp';
+import topsidetenis from '../../../img/topsideteniss.webp';
 
 const CasualSection = () => {
   return (
